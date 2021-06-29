@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JsonPost_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserId" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9h-6v-kxO">
+                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMF-TA-MQn">
+                                <rect key="frame" x="20" y="195" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Body" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4NU-IG-WQC">
+                                <rect key="frame" x="20" y="251" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nq-8u-eDA">
+                                <rect key="frame" x="174" y="356" width="67" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="btnPostClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDS-r9-gpR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3nq-8u-eDA" secondAttribute="trailing" constant="173" id="0Eg-eD-wrE"/>
+                            <constraint firstItem="GMF-TA-MQn" firstAttribute="top" secondItem="Z9h-6v-kxO" secondAttribute="bottom" constant="27" id="DVS-hM-idD"/>
+                            <constraint firstItem="3nq-8u-eDA" firstAttribute="top" secondItem="4NU-IG-WQC" secondAttribute="bottom" constant="71" id="DmB-hV-nm0"/>
+                            <constraint firstItem="4NU-IG-WQC" firstAttribute="top" secondItem="GMF-TA-MQn" secondAttribute="bottom" constant="22" id="DyC-FM-LZ1"/>
+                            <constraint firstItem="4NU-IG-WQC" firstAttribute="leading" secondItem="GMF-TA-MQn" secondAttribute="leading" id="HyK-h5-rFk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z9h-6v-kxO" secondAttribute="trailing" constant="20" id="L74-3t-v2S"/>
+                            <constraint firstItem="GMF-TA-MQn" firstAttribute="leading" secondItem="Z9h-6v-kxO" secondAttribute="leading" id="Qp9-Id-9MC"/>
+                            <constraint firstItem="4NU-IG-WQC" firstAttribute="trailing" secondItem="GMF-TA-MQn" secondAttribute="trailing" id="Y5U-tK-dl0"/>
+                            <constraint firstItem="Z9h-6v-kxO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="aPe-73-jjg"/>
+                            <constraint firstItem="3nq-8u-eDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="rOA-jr-t4b"/>
+                            <constraint firstItem="Z9h-6v-kxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sHq-hJ-CDd"/>
+                            <constraint firstItem="GMF-TA-MQn" firstAttribute="trailing" secondItem="Z9h-6v-kxO" secondAttribute="trailing" id="uXD-tq-JMs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textUID" destination="Z9h-6v-kxO" id="yW8-NP-QrP"/>
+                        <outlet property="txtBody" destination="4NU-IG-WQC" id="sn8-Av-Gvw"/>
+                        <outlet property="txtTitle" destination="GMF-TA-MQn" id="UFu-ou-eeq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

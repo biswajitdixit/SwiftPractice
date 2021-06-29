@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  localiZationDemo
+
+  Created by admin on 26/04/21.
+  
+*/
+"FirstNameKey" = "पहला नाम";
+"LastNameKey" = "अंतिम नाम";
